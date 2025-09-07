@@ -1,0 +1,33 @@
+#domain
+hospital
+#levelname
+MAchallenge
+#colors
+blue: 6, K, L
+red: 1, B
+grey: 2, C
+purple: 3, 7, D, G
+cyan: 8, 9, H, I
+green: 4, 5, E, F
+pink: 0, A, J
+#initial
+++++++++++++++++++++++++
++   G 1          7 A   +
++   H 2 +++   ++ 8 B   +
++   I 3 ++++++++ 9 C   +
++                      +
++   J 4          0 D   +
++   K 5 ++++++++   E   +
++   L 6            F   +
+++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++
++ A                  G +
++ B     +++   ++     H +
++ C     ++++++++     I +
++                      +
++ D                  J +
++ E     ++++++++     K +
++ F                  L +
+++++++++++++++++++++++++
+#end
