@@ -7,4 +7,5 @@ The master thesis consisted in the implementation of different algorithms to sol
 
 Inside Instructions.txt, there are steps on how to run the different algorithms, and their variants
 
-  
+## Levels
+Under the folder levels, there are multiple and different levels, each of them with a different type of complexity, distrubution, number of agents, number of colors,... Levels files must have a specific format, as shown in the examples. 
