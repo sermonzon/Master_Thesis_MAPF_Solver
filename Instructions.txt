@@ -1,7 +1,7 @@
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ 						        +
++ 						                                +
 +  INSTRUCTIONS ON HOW TO USE THE DIFFERENT ALGORITHMS  +
-+						        +
++						                                +
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
@@ -50,6 +50,7 @@ To use DerelaxBOX, run the following command:
 
 To use OBA, run the following command: 
 ..\searchclient\searchclient_python> java -jar ../server.jar -l ..\levels\MAPF01.lvl -c "python searchclient/searchclient.py -oba" -g -s 100 -t 180
+
 
 
 
