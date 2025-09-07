@@ -1,0 +1,58 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ 						        +
++  INSTRUCTIONS ON HOW TO USE THE DIFFERENT ALGORITHMS  +
++						        +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Examples on how to run the different algorithms in level MAPF01.lvl
+
+
+
+To use BFS, run the following command: 
+..\searchclient\searchclient_python> java -jar ../server.jar -l ..\levels\MAPF01.lvl -c "python searchclient/searchclient.py -bfs" -g -s 100 -t 180
+
+To use DFS, run the following command: 
+..\searchclient\searchclient_python> java -jar ../server.jar -l ..\levels\MAPF01.lvl -c "python searchclient/searchclient.py -dfs" -g -s 100 -t 180
+
+To use IW, run the following command: 
+..\searchclient\searchclient_python> java -jar ../server.jar -l ..\levels\MAPF01.lvl -c "python searchclient/searchclient.py -iw" -g -s 100 -t 180
+
+To use SIW, run the following command: 
+..\searchclient\searchclient_python> java -jar ../server.jar -l ..\levels\MAPF01.lvl -c "python searchclient/searchclient.py -siw" -g -s 100 -t 180
+
+
+To use IW+ and IW++, run the following command: 
+..\searchclient\searchclient_python> java -jar ../server.jar -l ..\levels\MAPF01.lvl -c "python searchclient/searchclient.py -iwplus" -g -s 100 -t 180
+
+	To change between IW+ and IW++, go to frontier.py. Then to class FrontierIWplus(Frontier) and inside __init__, change self.use_iw_plus to True (for IW+) or False (for IW++).
+
+
+To use BFWS and IW-H, run the following command: 
+..\searchclient\searchclient_python> java -jar ../server.jar -l ..\levels\MAPF01.lvl -c "python searchclient/searchclient.py -bfws" -g -s 100 -t 180
+
+	To change between BFWS and IW-H, go to frontier.py. Then to class Frontierbfws(Frontier) and inside __init__, change self.use_bfws to True (for BFWS) or False (for IW-H).
+
+	To use RPS, inside frontier.py ->  class Frontierbfws(Frontier) -> __init__ -> change self.reintroducing_pruned_states to True (for RPS) or False (not RPS).
+
+	To use OCNA, inside frontier.py ->  class Frontierbfws(Frontier) -> function add -> uncomment the codes lines indicated. 
+
+	To use Renew Atoms, go to state.py. Then, to def result(self, joint_action: '[Action, ...]') and then change parameter use_renew_atoms to True.
+
+	To use Expansion Controlling methods, go to state.py, then def get_expanded_states(self) and then change parameters controlling_expansion and method_random.
+
+
+To use DerelaxCOLOR, run the following command: 
+..\searchclient\searchclient_python> java -jar ../server.jar -l ..\levels\MAPF01.lvl -c "python searchclient/searchclient.py -derelaxcolor" -g -s 100 -t 180
+
+To use DerelaxBOX, run the following command: 
+..\searchclient\searchclient_python> java -jar ../server.jar -l ..\levels\MAPF01.lvl -c "python searchclient/searchclient.py -derelaxbox" -g -s 100 -t 180
+
+To use OBA, run the following command: 
+..\searchclient\searchclient_python> java -jar ../server.jar -l ..\levels\MAPF01.lvl -c "python searchclient/searchclient.py -oba" -g -s 100 -t 180
+
+
+
+
+
+
